@@ -58,7 +58,7 @@ export default function Footer() {
 
                 <div className="pt-8 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-neutral-400 text-sm">
-                        © 2025 RentSmart. All rights reserved.
+                        © 2025 SmartRent. All rights reserved.
                     </p>
                     <div className="flex items-center gap-4">
                         <a href="#" className="w-9 h-9 bg-neutral-900 hover:bg-neutral-800 border border-neutral-800 rounded-lg flex items-center justify-center transition-colors">
