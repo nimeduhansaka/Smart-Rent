@@ -1,4 +1,4 @@
-// @ts-ignore
+
 import { Music, Lamp, Trophy, GraduationCap, Package, Video } from 'lucide-react';
 import CategoryCard from './CategoryCard';
 
