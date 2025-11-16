@@ -9,16 +9,12 @@ import ListItem from './pages/ListItem';
 import HowItWorks from './pages/HowItWorks';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-import Preloader from './components/Preloader';
-import { useRouteLoading } from './hooks/useRouteLoading';
 
 function App() {
     const [searchQuery, setSearchQuery] = useState('');
-    const loading = useRouteLoading(2000);
 
     return (
         <div className="bg-black min-h-screen">
-            <Preloader visible={loading} />
             <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
             <Routes>
                 <Route path="/" element={<Home searchQuery={searchQuery} />} />
