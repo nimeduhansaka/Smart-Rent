@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -9,22 +9,14 @@ import ListItem from './pages/ListItem';
 import HowItWorks from './pages/HowItWorks';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
-import Preloader from './components/Preloader';
 
 function App() {
     const [searchQuery, setSearchQuery] = useState('');
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const timer = setTimeout(() => setLoading(false), 2000);
-        return () => clearTimeout(timer);
-    }, []);
 
     return (
         <>
-
-        <Preloader visible={loading} />
-        <div className="bg-black min-h-screen" style={{ opacity: loading ? 0 : 1, transition: 'opacity 500ms ease' }}>
+        
+        <div className="bg-black min-h-screen">
             <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
             <Routes>
                 <Route path="/" element={<Home searchQuery={searchQuery} />} />
