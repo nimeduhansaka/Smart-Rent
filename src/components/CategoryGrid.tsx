@@ -47,7 +47,7 @@ export default function CategoryGrid({ searchQuery }: CategoryGridProps) {
         {
             id: 'video',
             title: 'Video',
-            description: 'Cameras, lighting equipment, and video production gear',
+            description: 'Cameras, lighting, and video production gear',
             icon: Video,
             itemCount: 198,
             gradient: 'from-purple-500 to-indigo-500',

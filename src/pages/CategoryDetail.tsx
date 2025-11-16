@@ -27,6 +27,8 @@ export default function CategoryDetail() {
 
     // Category-specific items
     const categoryItems: Record<string, any[]> = {
+
+        // Music item section
         music: [
             {
                 id: 1,
@@ -89,6 +91,8 @@ export default function CategoryDetail() {
                 available: true,
             },
         ],
+
+        // Decoration item section
         decoration: [
             {
                 id: 1,
@@ -141,6 +145,8 @@ export default function CategoryDetail() {
                 available: true,
             },
         ],
+
+        // Sport section
         sports: [
             {
                 id: 1,
@@ -203,6 +209,8 @@ export default function CategoryDetail() {
                 available: true,
             },
         ],
+
+        // Uni item section
         uni: [
             {
                 id: 1,
@@ -255,6 +263,8 @@ export default function CategoryDetail() {
                 available: true,
             },
         ],
+
+        // Video section
         video: [
             {
                 id: 1,
@@ -317,6 +327,8 @@ export default function CategoryDetail() {
                 available: true,
             },
         ],
+
+        // Other item section
         other: [
             {
                 id: 1,
@@ -398,6 +410,7 @@ export default function CategoryDetail() {
     return (
         <div className="min-h-screen">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                
                 {/* Header */}
                 <div className="flex items-center gap-4 mb-8">
                     <div className={`w-16 h-16 bg-gradient-to-br ${category.gradient} rounded-xl flex items-center justify-center`}>
