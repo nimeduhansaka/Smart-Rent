@@ -14,7 +14,7 @@ import { useRouteLoading } from './hooks/useRouteLoading';
 
 function App() {
     const [searchQuery, setSearchQuery] = useState('');
-    const loading = useRouteLoading(600);
+    const loading = useRouteLoading(2000);
 
     return (
         <div className="bg-black min-h-screen">
