@@ -10,7 +10,7 @@ const TermsOfService = () => {
             <FileText className="text-white" size={32} />
           </div>
           <h1 className="text-4xl font-bold text-white mb-4">Terms of Service</h1>
-          <p className="text-gray-400">Last updated: November 18, 2025</p>
+          <p className="text-gray-400">Last updated: November 16, 2025</p>
         </div>
 
         {/* Content */}
