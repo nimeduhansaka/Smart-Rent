@@ -11,6 +11,7 @@ import HowItWorks from './pages/HowItWorks';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Preloader from './components/Preloader';
+import ContactUs from './pages/ContactUs';
 
 function App() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -36,6 +37,7 @@ function App() {
                 <Route path="/how-it-works" element={<HowItWorks />} />
                 <Route path="/signin" element={<SignIn />} />
                 <Route path="/signup" element={<SignUp />} />
+                <Route path="/contact" element={<ContactUs />} />
             </Routes>
             <Footer />
         </div>

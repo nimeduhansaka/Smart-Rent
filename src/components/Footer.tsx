@@ -48,7 +48,7 @@ export default function Footer() {
                             <li><Link to="/browse" onClick={handleLinkClick} className="text-neutral-400 hover:text-white text-sm transition-colors">Browse</Link></li>
                             <li><Link to="/how-it-works" onClick={handleLinkClick} className="text-neutral-400 hover:text-white text-sm transition-colors">How it Works</Link></li>
                             <li><Link to="/list-item" onClick={handleLinkClick} className="text-neutral-400 hover:text-white text-sm transition-colors">List Item</Link></li>
-                            <li><a href="#" className="text-neutral-400 hover:text-white text-sm transition-colors">Contact</a></li>
+                            <li><Link to="/contact" onClick={handleLinkClick} className="text-neutral-400 hover:text-white text-sm transition-colors">Contact</Link></li>
                         </ul>
                     </div>
 
