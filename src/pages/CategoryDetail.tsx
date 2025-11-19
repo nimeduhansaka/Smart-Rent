@@ -37,7 +37,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 1,
                 name: 'Professional Guitar',
-                price: 25,
+                price: 3000,
                 rating: 4.8,
                 reviews: 32,
                 location: 'Galle',
@@ -47,7 +47,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 2,
                 name: 'Keyboard Synthesizer',
-                price: 35,
+                price: 3500,
                 rating: 4.9,
                 reviews: 28,
                 location: 'Colombo',
@@ -57,7 +57,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 3,
                 name: 'Drum Set',
-                price: 50,
+                price: 5000,
                 rating: 4.7,
                 reviews: 45,
                 location: 'Colombo',
@@ -67,7 +67,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 4,
                 name: 'Studio Microphone',
-                price: 15,
+                price: 1500,
                 rating: 4.9,
                 reviews: 67,
                 location: 'Kurunagala',
@@ -77,7 +77,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 5,
                 name: 'Violin with Case',
-                price: 30,
+                price: 2500,
                 rating: 4.6,
                 reviews: 21,
                 location: 'Matara',
@@ -87,7 +87,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 6,
                 name: 'DJ Controller',
-                price: 40,
+                price: 5000,
                 rating: 4.8,
                 reviews: 38,
                 location: 'Anuradhapura',
@@ -97,7 +97,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 7,
                 name: 'Portable PA Tower',
-                price: 75,
+                price: 4500,
                 rating: 4.9,
                 reviews: 22,
                 location: 'Nuwara Eliya',
@@ -107,7 +107,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 8,
                 name: 'Modern Bass Guitar',
-                price: 45,
+                price: 4000,
                 rating: 4.7,
                 reviews: 30,
                 location: 'Galle',
@@ -117,7 +117,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 9,
                 name: 'Modular Synth Rack',
-                price: 55,
+                price: 5500,
                 rating: 4.8,
                 reviews: 27,
                 location: 'Kalutara',
@@ -127,7 +127,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 10,
                 name: 'Hybrid Drum Pad',
-                price: 40,
+                price: 5500,
                 rating: 4.6,
                 reviews: 19,
                 location: 'Elpitiya',
@@ -141,7 +141,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 1,
                 name: 'Vintage Table Lamps',
-                price: 15,
+                price: 1500,
                 rating: 4.7,
                 reviews: 24,
                 location: 'Kalutara',
@@ -151,7 +151,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 2,
                 name: 'LED String Lights',
-                price: 12,
+                price: 1200,
                 rating: 4.9,
                 reviews: 45,
                 location: 'Matara',
@@ -161,7 +161,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 3,
                 name: 'Wedding Arch Set',
-                price: 80,
+                price: 8000,
                 rating: 4.8,
                 reviews: 18,
                 location: 'Colombo',
@@ -171,7 +171,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 4,
                 name: 'Balloon Decoration Kit',
-                price: 20,
+                price: 2000,
                 rating: 4.6,
                 reviews: 52,
                 location: 'Galle',
@@ -181,7 +181,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 5,
                 name: 'Folding Chairs (Set of 10)',
-                price: 35,
+                price: 4000,
                 rating: 4.5,
                 reviews: 31,
                 location: 'Colombo',
@@ -191,7 +191,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 6,
                 name: 'Arches and Backdrops',
-                price: 35,
+                price: 3500,
                 rating: 4.5,
                 reviews: 31,
                 location: 'Awissawella',
@@ -201,7 +201,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 7,
                 name: 'Balloon Decor',
-                price: 35,
+                price: 2500,
                 rating: 4.5,
                 reviews: 31,
                 location: 'Kegalle',
@@ -211,7 +211,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 8,
                 name: 'Lanterns and Candle Holders',
-                price: 35,
+                price: 2500,
                 rating: 4.5,
                 reviews: 31,
                 location: 'Ratnapura',
@@ -225,7 +225,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 1,
                 name: 'Mountain Bike',
-                price: 30,
+                price: 2000,
                 rating: 4.8,
                 reviews: 42,
                 location: 'Matara',
@@ -235,7 +235,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 2,
                 name: 'Tennis Racket Set',
-                price: 18,
+                price: 1500,
                 rating: 4.7,
                 reviews: 28,
                 location: 'Colombo',
@@ -245,7 +245,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 3,
                 name: 'Camping Tent (4 Person)',
-                price: 40,
+                price: 4000,
                 rating: 4.9,
                 reviews: 56,
                 location: 'Kurunagala',
@@ -255,7 +255,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 4,
                 name: 'Kayak with Paddle',
-                price: 45,
+                price: 5500,
                 rating: 4.8,
                 reviews: 33,
                 location: 'Anuradhapura',
@@ -265,7 +265,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 5,
                 name: 'Golf Club Set',
-                price: 35,
+                price: 4500,
                 rating: 4.6,
                 reviews: 24,
                 location: 'Galle',
@@ -275,7 +275,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 6,
                 name: 'Surfboard',
-                price: 28,
+                price: 2800,
                 rating: 4.7,
                 reviews: 19,
                 location: 'Hambantota',
@@ -285,7 +285,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
              {
                 id: 7,
                 name: 'Cricket items Set',
-                price: 28,
+                price: 3500,
                 rating: 4.7,
                 reviews: 19,
                 location: 'Ambalantota',
@@ -295,7 +295,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
              {
                 id: 8,
                 name: 'Badminton racket Set',
-                price: 28,
+                price: 2800,
                 rating: 4.7,
                 reviews: 19,
                 location: 'Moratuwa',
@@ -305,7 +305,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
              {
                 id: 9,
                 name: 'Dumbbell Set',
-                price: 28,
+                price: 3000,
                 rating: 4.7,
                 reviews: 19,
                 location: 'Warakapola',
@@ -320,7 +320,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 1,
                 name: 'Scientific Calculator',
-                price: 8,
+                price: 800,
                 rating: 4.6,
                 reviews: 47,
                 location: 'Pambahinna',
@@ -330,7 +330,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 2,
                 name: 'Engineering Textbook Set',
-                price: 25,
+                price: 2500,
                 rating: 4.5,
                 reviews: 31,
                 location: 'Colombo',
@@ -340,7 +340,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 3,
                 name: 'Laptop Stand & Accessories',
-                price: 12,
+                price: 1200,
                 rating: 4.8,
                 reviews: 54,
                 location: 'Anuradhapura',
@@ -350,7 +350,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 4,
                 name: 'Study Desk Lamp',
-                price: 10,
+                price: 1000,
                 rating: 4.7,
                 reviews: 38,
                 location: 'Jaffna',
@@ -360,7 +360,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 5,
                 name: 'Art Supplies Kit',
-                price: 20,
+                price: 1500,
                 rating: 4.9,
                 reviews: 26,
                 location: 'Trincomale',
@@ -370,7 +370,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
              {
                 id: 6,
                 name: 'Study Lamps',
-                price: 20,
+                price: 1000,
                 rating: 4.9,
                 reviews: 26,
                 location: 'Balapitiya',
@@ -380,7 +380,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
              {
                 id: 7,
                 name: 'Microscopes for Labs',
-                price: 20,
+                price: 2500,
                 rating: 4.9,
                 reviews: 26,
                 location: 'Peliyagoda',
@@ -394,7 +394,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 1,
                 name: 'DSLR Camera Kit',
-                price: 60,
+                price: 6000,
                 rating: 4.9,
                 reviews: 64,
                 location: 'Colombo',
@@ -404,7 +404,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 2,
                 name: 'LED Ring Light',
-                price: 20,
+                price: 2000,
                 rating: 4.8,
                 reviews: 52,
                 location: 'Colombo',
@@ -414,7 +414,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 3,
                 name: 'Video Tripod Pro',
-                price: 25,
+                price: 2500,
                 rating: 4.7,
                 reviews: 38,
                 location: 'Galle',
@@ -424,7 +424,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 4,
                 name: 'Drone with 4K Camera',
-                price: 75,
+                price: 6500,
                 rating: 4.9,
                 reviews: 41,
                 location: 'Kalutara',
@@ -434,7 +434,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 5,
                 name: 'GoPro Action Camera',
-                price: 35,
+                price: 4500,
                 rating: 4.8,
                 reviews: 57,
                 location: 'Matara',
@@ -444,7 +444,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 6,
                 name: 'Studio Lighting Kit',
-                price: 50,
+                price: 5000,
                 rating: 4.7,
                 reviews: 29,
                 location: 'Jaffna',
@@ -454,7 +454,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
              {
                 id: 7,
                 name: 'Microphones',
-                price: 50,
+                price: 1500,
                 rating: 4.7,
                 reviews: 29,
                 location: 'kilinochchi',
@@ -468,7 +468,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 1,
                 name: 'Power Tools Set',
-                price: 35,
+                price: 1500,
                 rating: 4.6,
                 reviews: 43,
                 location: 'Polonnaruwa',
@@ -478,7 +478,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 2,
                 name: 'Pressure Washer',
-                price: 40,
+                price: 2000,
                 rating: 4.8,
                 reviews: 36,
                 location: 'Nuwara Eliya',
@@ -488,7 +488,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 3,
                 name: 'Projector & Screen',
-                price: 45,
+                price: 2500,
                 rating: 4.7,
                 reviews: 28,
                 location: 'Colombo',
@@ -498,7 +498,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 4,
                 name: 'Party Speaker System',
-                price: 30,
+                price: 3000,
                 rating: 4.9,
                 reviews: 51,
                 location: 'Balangoda',
@@ -508,7 +508,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 5,
                 name: 'Ladder (Extension)',
-                price: 18,
+                price: 2800,
                 rating: 4.5,
                 reviews: 22,
                 location: 'Galle',
@@ -518,7 +518,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
             {
                 id: 6,
                 name: 'Wheel barrow',
-                price: 18,
+                price: 2200,
                 rating: 4.5,
                 reviews: 22,
                 location: 'Matara',
@@ -528,7 +528,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
              {
                 id: 7,
                 name: 'Hand Sovel',
-                price: 18,
+                price: 1300,
                 rating: 4.5,
                 reviews: 22,
                 location: 'Matara',
@@ -669,7 +669,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
                                 </div>
                                 <div className="flex items-center justify-between pt-2 border-t border-neutral-800">
                                     <div className="text-white font-semibold">
-                                        ${item.price}
+                                        {item.price} lkr
                                         <span className="text-neutral-400 text-sm font-normal">/day</span>
                                     </div>
                                     {item.available && (
