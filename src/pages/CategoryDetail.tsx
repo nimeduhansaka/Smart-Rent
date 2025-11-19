@@ -72,7 +72,7 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
                 reviews: 45,
 
                 location: 'Southern Province',
-=======
+
 
                 image: 'https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=400',
                 available: false,
