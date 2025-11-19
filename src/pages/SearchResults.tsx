@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useState, MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { Star, MapPin, Search } from 'lucide-react';
 import { searchItems, Item } from '../utils/itemsData';
@@ -27,9 +27,19 @@ const categoryGradients: Record<string, string> = {
 };
 
 export default function SearchResults({ searchQuery }: SearchResultsProps) {
+    const [rentedItems, setRentedItems] = useState<Record<string, boolean>>({});
     const results = useMemo(() => {
         return searchItems(searchQuery);
     }, [searchQuery]);
+
+    const handleRentClick = (event: MouseEvent<HTMLButtonElement>, itemKey: string) => {
+        event.preventDefault();
+        event.stopPropagation();
+        setRentedItems((prev) => ({
+            ...prev,
+            [itemKey]: true,
+        }));
+    };
 
     if (!searchQuery.trim()) {
         return (
@@ -62,6 +72,8 @@ export default function SearchResults({ searchQuery }: SearchResultsProps) {
                         {results.map((item) => {
                             const Icon = categoryIcons[item.categoryName] || Package;
                             const gradient = categoryGradients[item.categoryName] || 'from-rose-500 to-pink-500';
+                            const itemKey = `${item.categoryId}-${item.id}`;
+                            const isRented = rentedItems[itemKey];
                             
                             return (
                                 <Link
@@ -112,9 +124,18 @@ export default function SearchResults({ searchQuery }: SearchResultsProps) {
                                                 <span className="text-neutral-400 text-sm font-normal">/day</span>
                                             </div>
                                             {item.available && (
-                                                <span className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-lg text-sm font-medium">
-                                                    Rent Now
-                                                </span>
+                                                <button
+                                                    type="button"
+                                                    onClick={(event) => handleRentClick(event, itemKey)}
+                                                    disabled={isRented}
+                                                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                                                        isRented
+                                                            ? 'bg-neutral-700 text-neutral-300 cursor-not-allowed'
+                                                            : 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:from-emerald-600 hover:to-cyan-600'
+                                                    }`}
+                                                >
+                                                    {isRented ? 'Rented' : 'Rent Now'}
+                                                </button>
                                             )}
                                         </div>
                                     </div>

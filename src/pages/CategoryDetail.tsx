@@ -11,6 +11,7 @@ interface CategoryDetailProps {
 export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps) {
     const { categoryId } = useParams<{ categoryId: string }>();
     const [activeFilter, setActiveFilter] = useState<FilterType>('all');
+    const [rentedItems, setRentedItems] = useState<Record<string, boolean>>({});
 
     // Scroll to top when category changes
     useEffect(() => {
@@ -28,6 +29,12 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
 
     const category = categoryInfo[categoryId || 'other'];
     const Icon = category.icon;
+    const handleRentClick = (itemKey: string) => {
+        setRentedItems((prev) => ({
+            ...prev,
+            [itemKey]: true,
+        }));
+    };
 
     // Category-specific items
     const categoryItems: Record<string, any[]> = {
@@ -633,12 +640,15 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
 
                 {/* Items Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {items.map((item) => (
-                        <div
-                            key={item.id}
-                            className="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-700 transition-all cursor-pointer"
-                        >
-                            <div className="relative aspect-square overflow-hidden">
+                    {items.map((item) => {
+                        const itemKey = `${categoryId || 'other'}-${item.id}`;
+                        const isRented = rentedItems[itemKey];
+                        return (
+                            <div
+                                key={item.id}
+                                className="group bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:border-neutral-700 transition-all cursor-pointer"
+                            >
+                                <div className="relative aspect-square overflow-hidden">
                                 <img
                                     src={item.image}
                                     alt={item.name}
@@ -673,14 +683,24 @@ export default function CategoryDetail({ searchQuery = '' }: CategoryDetailProps
                                         <span className="text-neutral-400 text-sm font-normal">/day</span>
                                     </div>
                                     {item.available && (
-                                        <button className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white rounded-lg text-sm font-medium hover:from-emerald-600 hover:to-cyan-600 transition-all">
-                                            Rent Now
+                                        <button
+                                            type="button"
+                                            onClick={() => handleRentClick(itemKey)}
+                                            disabled={isRented}
+                                            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                                                isRented
+                                                    ? 'bg-neutral-700 text-neutral-300 cursor-not-allowed'
+                                                    : 'bg-gradient-to-r from-emerald-500 to-cyan-500 text-white hover:from-emerald-600 hover:to-cyan-600'
+                                            }`}
+                                        >
+                                            {isRented ? 'Rented' : 'Rent Now'}
                                         </button>
                                     )}
                                 </div>
                             </div>
                         </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </div>
