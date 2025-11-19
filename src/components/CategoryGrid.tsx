@@ -71,14 +71,14 @@ export default function CategoryGrid({ searchQuery }: CategoryGridProps) {
     );
 
     return (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-18">
             <div className="space-y-12">
-                <div className="text-center space-y-4">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-white">Browse Categories</h2>
-                    <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
-                        Find exactly what you need from our diverse collection of rental items
-                    </p>
-                </div>
+                {/*<div className="text-center space-y-4">*/}
+                {/*    <h2 className="text-3xl sm:text-4xl font-bold text-white">Browse Categories</h2>*/}
+                {/*    <p className="text-neutral-400 text-lg max-w-2xl mx-auto">*/}
+                {/*        Find exactly what you need from our diverse collection of rental items*/}
+                {/*    </p>*/}
+                {/*</div>*/}
 
                 {filteredCategories.length > 0 ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
