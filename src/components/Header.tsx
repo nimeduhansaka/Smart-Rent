@@ -31,7 +31,7 @@ export default function Header({ searchQuery, setSearchQuery }: HeaderProps) {
                     <div className="flex items-center justify-between h-20 sm:h-24 px-5 sm:px-8">
 
                         {/* Logo section */}
-                        <Link to="/" onClick={() => window.location.reload()} className="flex items-center gap-3">
+                        <Link to="/" onClick={handleLinkClick} className="flex items-center gap-3">
                             <img
                                 src={logo}
                                 alt="SmartRent logo"
