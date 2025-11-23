@@ -55,9 +55,9 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white font-medium mb-4">Legal</h4>
                         <ul className="space-y-2">
-                            <li><a href="/terms" className="text-neutral-400 hover:text-white text-sm transition-colors">Terms of Service</a></li>
-                            <li><a href="/privacy" className="text-neutral-400 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
-                            <li><a href="/cookies" className="text-neutral-400 hover:text-white text-sm transition-colors">Cookie Policy</a></li>
+                            <li><Link to="/terms" onClick={handleLinkClick} className="text-neutral-400 hover:text-white text-sm transition-colors">Terms of Service</Link></li>
+                            <li><Link to="/privacy" onClick={handleLinkClick} className="text-neutral-400 hover:text-white text-sm transition-colors">Privacy Policy</Link></li>
+                            <li><Link to="/cookies" onClick={handleLinkClick} className="text-neutral-400 hover:text-white text-sm transition-colors">Cookie Policy</Link></li>
                         </ul>
                     </div>
                 </div>
