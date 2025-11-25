@@ -1,5 +1,6 @@
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
+// @ts-ignore
 import logo from "../assets/logo.png";
 
 export default function Footer() {
@@ -8,7 +9,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="border-t border-neutral-800 bg-neutral-950">
+        <footer id="bottom-section" className="border-t border-neutral-800 bg-neutral-950">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                     <div className="space-y-4">

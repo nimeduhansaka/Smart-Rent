@@ -15,6 +15,7 @@ import ContactUs from './pages/ContactUs';
 import TermsOfService from './pages/TermsOfService';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import CookiePolicy from './pages/CookiePolicy';
+import BuyMeCoffeeWidget from "./components/BuyMeCoffeeWidget";
 
 function App() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -45,6 +46,7 @@ function App() {
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/cookies" element={<CookiePolicy />} />
             </Routes>
+            <BuyMeCoffeeWidget />
             <Footer />
         </div>
 
